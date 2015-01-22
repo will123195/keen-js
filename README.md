@@ -1,5 +1,7 @@
 # Keen IO JavaScript SDK (v3.2.1)
 
+## What is Keen?
+
 ## Start with What is an API
 
 ## What is the JS library For??
