@@ -1,5 +1,7 @@
 # Keen IO JavaScript SDK (v3.2.1)
 
+## What is Keen?
+
 ## Start with What is an API
 
 **Important:** v3.2.0 introduced several breaking changes from previous versions. Check out the [Changelog](./CHANGELOG.md#3.2.0) before upgrading.
