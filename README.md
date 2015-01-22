@@ -1,5 +1,7 @@
 # Keen IO JavaScript SDK (v3.2.1)
 
+## Start with What is an API
+
 **Important:** v3.2.0 introduced several breaking changes from previous versions. Check out the [Changelog](./CHANGELOG.md#3.2.0) before upgrading.
 
 **Charts issue:** A recent update to the Google Visualization API is causing charts to fail in earlier versions of this library. To resolve the issue, simply update from v3.0.x to [v3.1.0](https://d26b395fwzu5fz.cloudfront.net/3.1.0/keen.js). This is a safe upgrade with no breaking changes from earlier affected versions. Read about this release [here](https://github.com/keen/keen-js/releases/tag/v3.1.0).
