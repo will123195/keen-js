@@ -2,7 +2,7 @@
 
 ## What is Keen?
 
-## Start with What is an API
+## What is an API
 
 ## What is the JS library For??
 
