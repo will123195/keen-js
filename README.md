@@ -1,8 +1,68 @@
 # Keen IO JavaScript SDK (v3.2.1)
 
-## What is Keen?
+## What Is Keen IO?
 
-## What is an API
+The purpose of Keen IO is to help you store huge amounts of data you collect and to provide a tool (Application Programming Interface, or API) for you to analyze that data. Event data (contains an action, a timestamp, and a state) is the type of data that works best within the Keen API.
+
+## What Is The Keen IO API?
+
+The Keen IO Application Programming Interface (API) is an analytics tool, specifically designed for developers to track any event, ie. signups, upgrades, impressions, purchases, powerups, errors, shares, etc. This API requires the use of the JSON format to store the data you would like to analyze. This will enable automatic ingestion of any new events and custom properties you would like to run a query on. With the use of this API, you can build a completely custom analytics solution and embed the analytics on your site or provide insight into your company or projects to your customers.
+
+
+## First Step: Determine If Keen IO Is For You
+
+
+## Second Step: Start using the Keen IO Tools
+
+
+## Third Step: Import Data into Keen IO
+
+
+## Fourth Step: Run Querries
+
+### Configure A Project
+
+### Include The Library
+#### What is the JS Library For?
+
+### HTML and JavaScript Formatting
+
+The HTML Layout describes the formatting of the data vizualization on the displayed dashboard, ie how many figures will be displayed. The Javascript runs the queries and draws the figures within the appropriate sections of the dashboard. Examples of the HTML and JavaScript formatting will be described in more detail below.
+
+#### HTML Layout
+
+**Will show an example of an empty dashboard and the HTML code provided**
+
+##### More Advanced Dashboards
+
+**Tabs and buttons**
+
+#### JavaScript Layout
+
+**Will show an example of Javascript: how to run a querry and how to draw a figure**
+
+### Query Examples
+
+**What queries can be created? What are the various components? Provide Examples of Filters, timestamp, analysis type, group_by, etc.**
+
+#### Query Trouble Shooting
+
+##### Ouput to Console
+##### Inspect Network Requests
+
+
+
+
+
+### Vizualization Types
+
+**Describe the vizualzation types and then provide Code Samples**
+
+#### Advanced Visualizations
+
+
+
+
 
 ## What is the JS library For??
 
