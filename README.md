@@ -12,8 +12,9 @@ The Keen IO Application Programming Interface (API) is an analytics tool, specif
 ## First Step: Determine If Keen IO Is For You
 
 
-## Second Step: Start using the Keen IO Tools
+## Second Step: Begin Using the Keen IO Tools
 
+**Copy the link from the Keen website**
 
 ## Third Step: Import Data into Keen IO
 
@@ -21,6 +22,8 @@ The Keen IO Application Programming Interface (API) is an analytics tool, specif
 ## Fourth Step: Run Querries
 
 ### Configure A Project
+
+
 
 ### Include The Library
 #### What is the JS Library For?
@@ -32,6 +35,8 @@ The HTML Layout describes the formatting of the data vizualization on the displa
 #### HTML Layout
 
 **Will show an example of an empty dashboard and the HTML code provided**
+
+
 
 ##### More Advanced Dashboards
 
@@ -45,6 +50,8 @@ The HTML Layout describes the formatting of the data vizualization on the displa
 
 **What queries can be created? What are the various components? Provide Examples of Filters, timestamp, analysis type, group_by, etc.**
 
+
+
 #### Query Trouble Shooting
 
 ##### Ouput to Console
@@ -57,6 +64,62 @@ The HTML Layout describes the formatting of the data vizualization on the displa
 ### Vizualization Types
 
 **Describe the vizualzation types and then provide Code Samples**
+
+#### Standard Vizualizations
+
+There are some standard Vizualizations you can create on your Dashboard: Area Charts, Bar Charts, Column Charts, Line Charts, Metric Summary, Pie Charts, and Tables.
+
+The first few charts will use the following querry example written in JavaScript:
+
+	var total_pageviews = new Keen.Query("count", {
+  		eventCollection: "pageviews",
+  		groupBy: "channel",
+  		timeframe: "this_3_days",
+  		interval: "daily"
+	});
+The query above is to determine how many users view a specific page over the web versus over a mobile device.
+
+
+##### Area Charts
+
+Below is the sample of JavaScript code needed to create an Area Chart showing pageviews on the web versus on a mobile device over time.
+
+	client.draw(total_pageviews, document.getElementById("total-daily-revenue-areachart"), {
+  		chartType: "areachart",
+  		title: "Daily revenue (7 days)",
+  		chartOptions: {
+   			isStacked: true
+  		}
+	});
+
+ 
+![Resize icon][1] 
+
+[1]: https://camo.githubusercontent.com/82bd177d318ab150db071297fac9862276382a64/687474703a2f2f6432366233393566777a7535667a2e636c6f756466726f6e742e6e65742f696d616765732f4b65656e2d64656d6f2d6172656163686172742e706e67
+
+The html code will need to include the following line:
+
+	<div id="total-daily-revenue-areachart"></div>
+
+##### Bar Charts
+
+Below is the sample of JavaScript code needed to create an Area Chart showing pageviews on the web versus on a mobile device over time.
+
+	client.draw(total_pageviews, document.getElementById("total-daily-revenue-barchart"), {
+  		chartType: "barchart",
+  		title: "Daily revenue (7 days)",
+  		chartOptions: {
+    		isStacked: true
+  		}
+	});
+
+![Resize icon][2] 
+
+[2]: https://camo.githubusercontent.com/e84d9ed664f3cce116f6fbeea0cdf6164d54bd19/687474703a2f2f6432366233393566777a7535667a2e636c6f756466726f6e742e6e65742f696d616765732f4b65656e2d64656d6f2d62617263686172742e706e67
+
+The html code will need to include the following line
+
+	<div id="total-daily-revenue-barchart"></div>
 
 #### Advanced Visualizations
 
